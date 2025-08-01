@@ -1,0 +1,15 @@
+body{
+     background-color: rgb(58, 166, 255);
+     font-size: 20px;
+     font-family: sans-serif;
+}
+h1{
+   color: blue;
+   background-color: aqua;
+}
+h2{
+   color: rgb(1, 107, 72);
+}
+p{
+  text-align: justify;
+}
