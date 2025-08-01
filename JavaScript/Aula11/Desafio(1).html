@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+    <style>
+        body{
+            background: green;
+            font: normal 12pt Arial;
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de imigração</h1>
+    <p>Bem-vindo ao sistema de imigração do aeroporto CAS.</p>
+    <p>Para saber a qual portão se dirigir, primeiro nos informe sua nacionalidade. </p>
+    Qual o país que você nasceu: <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id = "res">
+        <p>Processando...</p>
+    </div>
+    <script>
+        function verificar() {
+            var nac = window.document.querySelector("input#txtnac")
+            var res = window.document.querySelector("div#res")
+            var país = String (nac.value)
+            if (país == "Brasil"){
+                res.innerHTML = `<p>Você é <strong>brasileiro</strong>, bem-vindo de volta! Favor se dirigir ao portão nº1.`
+            } else{
+                res.innerHTML = `<p>Você é <strong>estrangeiro</strong>, bem-vindo ao Brasil! Por favor, se dirija ao portão nº2.`
+            }
+        }
+    </script>
+</body>
+</html>

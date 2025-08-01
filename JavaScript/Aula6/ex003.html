@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro programa...</title>
+    <style>
+        body{
+            background-color:rgb(99, 87, 55);
+            color:rgb(252, 207, 207);
+            font: normal 20pt calibri; /* comentário em css */
+        }
+        h1{
+            color:rgb(224, 226, 226);
+        }
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1>  <!-- Comentário em html-->
+    <p>Já me livrei da maldição!</p>  
+    <script> //Comentário em JS /*Outra opção de comentário em JS*/
+        var n1 = Number.parseInt(window.prompt("Digite um número: ")); //Number.parseInt(n) para converter a variável em número inteiro.
+        var n2 = Number.parseInt(window.prompt("Digite outro número: ")); // Se eu quero número do tipo real eu preciso usar o comando Number.parseFloat(n).
+        // Ou posso por somente Number(n) que ele vai me retornar um número inteiro ou real.
+        var s = n1 + n2; // + pode ser para adição e para concatenação. Se as variáveis forem number vai fazer adição, já se forem string vai fazer concatenação.
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}.`);
+    </script>
+</body>
+</html>
